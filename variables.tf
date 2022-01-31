@@ -9,7 +9,7 @@ variable "name" {
 
 variable "web_node_count" {
   description = "number of worker nodes"
-  default     = "3"
+  default     = "50"
 }
 
 variable "instance_type" {
@@ -29,7 +29,7 @@ variable "ssh_user" {
 
 variable "pub_key" {
   description = "the public key to be used to access the bastion host and ansible nodes"
-  default     = "joestack"
+  default     = "sasano"
 }
 
 variable "pri_key" {
@@ -38,7 +38,7 @@ variable "pri_key" {
 
 variable "dns_domain" {
   description = "DNS domain suffix"
-  default     = "joestack.xyz"
+  default     = "sasanostack"
 }
 
 variable "network_address_space" {
